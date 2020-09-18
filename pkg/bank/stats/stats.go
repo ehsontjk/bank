@@ -1,7 +1,7 @@
 package stats
 
 import (
-	"github.com/ehsontjk/bank/pkg/bank"
+	"github.com/ehsontjk/bank/pkg/bank/types"
 )
 func Avg(payments []types.Payment) types.Money  {
 	max := payments[0]
@@ -9,7 +9,7 @@ func Avg(payments []types.Payment) types.Money  {
 		if max.Amount < payment.Amount { 
 		
 
-			max = payment
+			max = payment.Amount
 		}
 	}
 
