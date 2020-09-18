@@ -5,7 +5,7 @@ import (
 	"github.com/ehsontjk/bank/pkg/bank/types"
 	"fmt"
 )
-func ExampleMax() {
+func ExampleAvg() {
 	payments := []types.Payment{
 		{
 			ID: 12,
@@ -36,7 +36,7 @@ Amount: 48_000_00,
 		}
 	
 
-	max := Max(payments)
-	fmt.Println(max.ID)
-	// Output: 34
+	max := Avg(payments)
+	fmt.Println(max)
+	// Output: 3940000
 }
