@@ -5,7 +5,7 @@ import (
 	"github.com/ehsontjk/bank/pkg/bank/types"
 	"fmt"
 )
-func ExampleAvg() {
+func ExampleTotalInCategory() {
 	payments := []types.Payment{
 		{
 			ID: 12,
@@ -15,12 +15,12 @@ func ExampleAvg() {
 		{
 			ID: 13,
 			Amount: 20_000_00,
-			Category: "bank",
+			Category: "auto",
 		},
 		{
 			ID: 34,
 			Amount: 48_000_00,
-			Category: "bank",	
+			Category: "auto",	
 		},
 		{
 ID: 5,
@@ -36,7 +36,8 @@ Amount: 48_000_00,
 		}
 	
 
-	max := Avg(payments)
-	fmt.Println(max)
-	// Output: 3940000
+	
+	totalInCategory := TotalInCategory(payments, "auto")
+	fmt.Println(totalInCategory)
+	// Output: 6800000
 }
