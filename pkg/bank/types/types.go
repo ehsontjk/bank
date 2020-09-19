@@ -1,5 +1,5 @@
 package types
-type Money int64
+type Money int
 
 type Category string
 

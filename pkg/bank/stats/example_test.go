@@ -1,3 +1,4 @@
+
 package stats
 
 
@@ -41,3 +42,4 @@ Amount: 48_000_00,
 	fmt.Println(totalInCategory)
 	// Output: 6800000
 }
+
