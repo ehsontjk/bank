@@ -39,5 +39,5 @@ Amount: 48_000_00,
 	
 	totalInCategory := TotalInCategory(payments, "auto")
 	fmt.Println(totalInCategory)
-	// Output: 3940000
+	// Output: 6800000
 }
